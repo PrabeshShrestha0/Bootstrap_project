@@ -1,0 +1,8 @@
+.carousel-item img{
+    height: 450px;
+}
+.table img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+  }

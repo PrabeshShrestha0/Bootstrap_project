@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Example</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+  <!-- Bootstrap JavaScript (Optional) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .login-box {
+      padding: 20px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body> 
+    <div class="container-fluid">
+    <div class="row bg-dark text-white">
+        <div class="col-md-3 text-center">
+            <a class="navbar-brand fs-3 fw-bold" href="#">Our store</a>
+        </div>
+        <div class="col-md-6 py-1">
+            <!-- py denotes padding -->
+            <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-warning" type="submit">Search</button>
+          </form>
+        </div>
+        <div class="col-md-3 py-1">
+            <a href="login.html" class="btn btn-primary">
+                <i class="bi bi-box-arrow-in-right"></i> Login
+              </a>
+              <a href="register.html" class="btn btn-success">
+                <i class="bi bi-person-plus"></i> Register
+              </a>
+              <a href="cart.html" class="btn btn-warning">
+                <i class="bi bi-cart"></i> Cart
+              </a>
+        </div>
+    </div>
+</div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="layout.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="service.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="blog.html">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container my-5">
+        <div class="row justify-content-center">
+          <div class="col-md-6 login-box">
+            <form>
+              <img class="mb-4 mx-auto d-block" src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="72" height="57">
+              <h1 class="h3 mb-3 fw-normal text-center">Please sign in</h1>
+              
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+              
+              <div class="form-check text-start my-3">
+                <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Remember me
+                </label>
+              </div>
+              
+              <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+             
+              <div class="d-flex justify-content-between">
+                <span> Do you have an account? <a href="register.html">Sign up now</a></span>
+                <a href="forgetpassword.html">Forgot password</a>
+              </div>
+            </form>
+            <p class="mt-5 mb-3 text-body-secondary text-center">&copy; 2017–2024</p>
+          </div>
+        </div>
+      </div>
+      
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Company, Inc</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook"></i></a></li>
+        </ul>
+      </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Example</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .card-group .card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      border-style: none;
+    }
+    .card-group .card img {
+      max-height: 200px;
+      object-fit: cover;
+    }
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+    .card-text {
+      font-size: 1rem;
+    }
+    .add-to-cart-btn {
+      background-color: #ff9800;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    .add-to-cart-btn:hover {
+      background-color: #e68900;
+    }
+    .card-body .bi-heart {
+      color: #ff9800;
+    }
+    .card-body .bi-heart:hover {
+      color: #e68900;
+    }
+  </style>
+</head>
+<body> 
+  <div class="container-fluid">
+    <div class="row bg-dark text-white">
+      <div class="col-md-3 text-center">
+        <a class="navbar-brand fs-3 fw-bold" href="#">Our Store</a>
+      </div>
+      <div class="col-md-6 py-1">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-warning" type="submit">Search</button>
+        </form>
+      </div>
+      <div class="col-md-3 py-1 text-center">
+        <a href="login.html" class="btn btn-primary">
+          <i class="bi bi-box-arrow-in-right"></i> Login
+        </a>
+        <a href="register.html" class="btn btn-success">
+          <i class="bi bi-person-plus"></i> Register
+        </a>
+        <a href="cart.html" class="btn btn-warning">
+          <i class="bi bi-cart"></i> Cart
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="layout.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="product.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="blogs.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <h3 class="text-decoration-underline">Deals</h3>
+        <ul class="list-unstyled fw-bold ps-4">
+          <li><a href="#" class="text-danger fw-bold text-decoration-none">Flash Sales</a></li>
+          <li><a href="#" class="text-info fw-bold text-decoration-none">Daily Deals</a></li>
+          <li><a href="#" class="text-success fw-bold text-decoration-none">Most Popular</a></li>
+        </ul>
+
+        <h3>Categories</h3>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+          <label class="form-check-label" for="flexCheckDefault1">
+            Accessories
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2">
+          <label class="form-check-label" for="flexCheckChecked2">
+            Fitness
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+          <label class="form-check-label" for="flexCheckDefault3">
+            Health
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4">
+          <label class="form-check-label" for="flexCheckChecked4">
+            Sports
+          </label>
+        </div>
+
+        <h3>Prices</h3>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Up to Rs0-10,000
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+          <label class="form-check-label" for="flexRadioDefault2">
+            Rs10,000-50,000
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+          <label class="form-check-label" for="flexRadioDefault3">
+            Rs50,000-100,000
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+          <label class="form-check-label" for="flexRadioDefault4">
+            Rs100,000-150,000
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+          <label class="form-check-label" for="flexRadioDefault5">
+            Rs150,000-200,000
+          </label>
+        </div>
+
+        <h3>Avg. Customer Review</h3>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-warning">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star"></i>
+          </a></li>
+          <li><a href="#" class="text-warning">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+          </a></li>
+          <li><a href="#" class="text-warning">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+          </a></li>
+          <li><a href="#" class="text-warning">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+          </a></li>
+          <li><a href="#" class="text-warning">
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+          </a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-9">
+        <div class="card-group">
+          <div class="card m-3 shadow-sm">
+            <img src="https://via.placeholder.com/300x200?text=Vehicle+1" class="card-img-top" alt="Vehicle 1">
+            <div class="card-body">
+              <h5 class="card-title">Vehicle 1</h5>
+              <p class="card-text">This is a description of Vehicle 1. It's a great choice for transportation.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <button class="btn add-to-cart-btn">Add to Cart</button>
+                <i class="bi bi-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card m-3 shadow-sm">
+            <img src="https://via.placeholder.com/300x200?text=Vehicle+2" class="card-img-top" alt="Vehicle 2">
+            <div class="card-body">
+              <h5 class="card-title">Vehicle 2</h5>
+              <p class="card-text">This is a description of Vehicle 2. It's a great choice for long hauls.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <button class="btn add-to-cart-btn">Add to Cart</button>
+                <i class="bi bi-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card m-3 shadow-sm">
+            <img src="https://via.placeholder.com/300x200?text=Vehicle+3" class="card-img-top" alt="Vehicle 3">
+            <div class="card-body">
+              <h5 class="card-title">Vehicle 3</5>
+              <p class="card-text">This is a description of Vehicle 3. It's perfect for heavy loads.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <button class="btn add-to-cart-btn">Add to Cart</button>
+                <i class="bi bi-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-group">
+          <div class="card m-3 shadow-sm">
+            <img src="https://via.placeholder.com/300x200?text=Vehicle+4" class="card-img-top" alt="Vehicle 4">
+            <div class="card-body">
+              <h5 class="card-title">Vehicle 4</h5>
+              <p class="card-text">This is a description of Vehicle 4. It has excellent fuel efficiency.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <button class="btn add-to-cart-btn">Add to Cart</button>
+                <i class="bi bi-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card m-3 shadow-sm">
+            <img src="https://via.placeholder.com/300x200?text=Vehicle+5" class="card-img-top" alt="Vehicle 5">
+            <div class="card-body">
+              <h5 class="card-title">Vehicle 5</h5>
+              <p class="card-text">This is a description of Vehicle 5. It's designed for urban deliveries.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <button class="btn add-to-cart-btn">Add to Cart</button>
+                <i class="bi bi-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card m-3 shadow-sm">
+            <img src="https://via.placeholder.com/300x200?text=Vehicle+6" class="card-img-top" alt="Vehicle 6">
+            <div class="card-body">
+              <h5 class="card-title">Vehicle 6</h5>
+              <p class="card-text">This is a description of Vehicle 6. It's a reliable choice for all terrains.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <button class="btn add-to-cart-btn">Add to Cart</button>
+                <i class="bi bi-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
